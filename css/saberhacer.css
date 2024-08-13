@@ -1,0 +1,53 @@
+.navbar-custom {
+    background-color: hsl(134, 75%, 22%); 
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 3rem; 
+    font-family: 'Arial', sans-serif; 
+    color: white;
+    margin: 10px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#login-form {
+    display: block;
+}
+
+#register-form {
+    display: none;
+}
+
+#login-option:checked ~ #forms-container #login-form {
+    display: block;
+}
+
+#login-option:checked ~ #forms-container #register-form {
+    display: none;
+}
+
+#register-option:checked ~ #forms-container #register-form {
+    display: block;
+}
+
+#register-option:checked ~ #forms-container #login-form {
+    display: none;
+}
+
+.btn-acceder {
+    background-color: #007bff; /* Color azul */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-acceder:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el ratón */
+    cursor: pointer;
+}
